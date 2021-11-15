@@ -25,8 +25,10 @@ public class MyConfig {
     //修改Ribbon负载均衡测率
     @Bean
     public IRule myRule(){
-        return new RandomRule(); //使用随机测量
+//        return new RandomRule(); //使用随机测量
+        return new MyRandomRule(); //使用自定义负载均衡
     }
+
 
 
 }
