@@ -18,6 +18,6 @@ public class UserController {
     @GetMapping
     @ResponseBody
     public User test(){
-        return new User("002","李四",33,"消息来自simple-provider-user-7002");
+        return new User("001","张三",22,"消息来自simple-provider-user-7002");
     }
 }
