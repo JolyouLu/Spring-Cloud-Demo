@@ -1,0 +1,16 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-order-service
+
+eureka:
+  client:
+    #表示需要将自己注册到注册中心上对外提供服务
+    register-with-eureka: false
+    #表示需要从注册中心抓取已经注册的服务
+    fetch-registry: true
+    service-url:
+      #向指定的注册中心注册自己，集群使用","分割
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
