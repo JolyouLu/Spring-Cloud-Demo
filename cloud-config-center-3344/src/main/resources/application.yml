@@ -18,6 +18,19 @@ spring:
 #          password:
       #读取的分支
       label: master
+  #配置rabbitmq连接地址与账号密码
+  rabbitmq:
+    host: 192.168.100.101
+    port: 5672
+    username: admin
+    password: 123
+
+management:
+  #暴露bus刷新配置的端点
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
 
 eureka:
   client:
