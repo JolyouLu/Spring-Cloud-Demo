@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: info
+#    active: dev  #使用 nacos-config-client-dev.yaml 配置
+#    active: test #使用 nacos-config-client-test.yaml 配置
+#    active: pro  #使用 nacos-config-client-pro.yaml 配置
