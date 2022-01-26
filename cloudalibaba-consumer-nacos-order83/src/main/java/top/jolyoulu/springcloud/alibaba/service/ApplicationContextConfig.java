@@ -1,4 +1,4 @@
-package top.jolyoulu.springcloud.alibaba.config;
+package top.jolyoulu.springcloud.alibaba.service;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

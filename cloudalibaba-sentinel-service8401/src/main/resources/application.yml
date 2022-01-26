@@ -15,6 +15,20 @@ spring:
         dashboard: localhost:8080
         #假如端口被占用会自动从8719开始+1扫描，扫描到未被占用的端口
         port: 8719
+      #将限流规则持久化
+      datasource:
+        #数据源1
+        ds1:
+          nacos:
+            #nacos的地址
+            server-addr: localhost:8848
+            #配置文件 dataId
+            dataId: alibabacloud-sentinel-service
+            #配置文件 groupId
+            groupId: DEFAULT_GROUP
+            #配置文件 类型
+            data-type: json
+            rule-type: flow
 
 #暴露服务，用于配置中心
 management:
